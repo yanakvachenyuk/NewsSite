@@ -1,0 +1,42 @@
+﻿@model List<NewsSite.Models.News>
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["AllNews"];
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/news.css" />
+}
+
+@if (Model.Any())
+{
+    <div class="news-list">
+        @foreach (var news in Model)
+        {
+            <div class="news-item">
+                <div class="news-item-content">
+                    <h3 class="news-item-title">@news.Title</h3>
+                    <p class="news-item-subtitle">@news.Subtitle</p>
+                    <p class="news-item-text">
+                        @(news.Content.Length > 150 ? news.Content.Substring(0, 150) + "..." : news.Content)
+                    </p>
+                    <div class="news-item-footer">
+                        <span style="color: #a0aec0; font-size: 0.9rem;">
+                            @news.CreatedDate.ToString("MMM dd, yyyy")
+                        </span>
+                        <a href="/Home/NewsDetails/@news.Id" class="btn">@Localizer["ReadMore"]</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="empty-state">
+        <h3>@Localizer["NoNewsAvailable"]</h3>
+       
+    </div>
+}

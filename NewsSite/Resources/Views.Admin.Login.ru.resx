@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="AdminLogin" xml:space="preserve">
+    <value>Вход для администратора</value>
+  </data>
+	<data name="AdminPortal" xml:space="preserve">
+    <value>Панель администратора</value>
+  </data>
+	<data name="SignInToAccount" xml:space="preserve">
+    <value>Войдите в свой аккаунт</value>
+  </data>
+	<data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+	<data name="Password" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+	<data name="SignIn" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+	<data name="InvalidCredentials" xml:space="preserve">
+    <value>Неверный email или пароль</value>
+  </data>
+</root> 

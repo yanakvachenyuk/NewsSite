@@ -1,0 +1,60 @@
+﻿@model List<NewsSite.Models.News>
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["NewsManagement"];
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/admin.css" />
+}
+
+<div class="admin-header">
+    <h2>@Localizer["NewsManagement"]</h2>
+    <div class="admin-actions">
+        <a href="/Admin/Create" class="btn btn-success">@Localizer["CreateNew"]</a>
+        <a href="/Admin/Logout" class="btn btn-secondary">@Localizer["Logout"]</a>
+    </div>
+</div>
+
+@if (Model.Any())
+{
+    <div class="news-table">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 50%;">@Localizer["Title"]</th>
+                    <th style="width: 20%;">@Localizer["Date"]</th>
+                    <th style="width: 30%;">@Localizer["Actions"]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var news in Model)
+                {
+                    <tr>
+                        <td>@news.Title</td>
+                        <td>@news.CreatedDate.ToString("MMM dd, yyyy")</td>
+                        <td class="table-actions">
+                            <a href="/Admin/Edit/@news.Id" class="btn btn-primary btn-sm">@Localizer["Edit"]</a>
+                            <form method="post" action="/Admin/Delete/@news.Id" style="display: inline;">
+                                <button type="submit" class="btn btn-danger btn-sm"
+                                        onclick="return confirm('Are you sure you want to delete this news?')">
+                                    @Localizer["Delete"]
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="alert alert-info">
+        <h3>@Localizer["NoArticlesFound"]</h3>
+        <p>@Localizer["StartCreating"]</p>
+        <a href="/Admin/Create" class="btn btn-primary">@Localizer["CreateFirstNews"]</a>
+    </div>
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="AllNews" xml:space="preserve">
+    <value>All News</value>
+  </data>
+	<data name="StayInformed" xml:space="preserve">
+    <value>Stay informed with our latest updates</value>
+  </data>
+	<data name="ReadMore" xml:space="preserve">
+    <value>Read More</value>
+  </data>
+	<data name="NoNewsAvailable" xml:space="preserve">
+    <value>No news available</value>
+  </data>
+	
+</root> 

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="EditNews" xml:space="preserve">
+    <value>Редактировать новость</value>
+  </data>
+	<data name="EditArticle" xml:space="preserve">
+    <value>Редактировать новость</value>
+  </data>
+	<data name="Title" xml:space="preserve">
+    <value>Заголовок *</value>
+  </data>
+	<data name="Subtitle" xml:space="preserve">
+    <value>Подзаголовок</value>
+  </data>
+	<data name="NewsImage" xml:space="preserve">
+    <value>Изображение новости</value>
+  </data>
+	<data name="CurrentImage" xml:space="preserve">
+    <value>Текущее изображение:</value>
+  </data>
+	<data name="ChooseNewImage" xml:space="preserve">
+    <value>Выберите новое изображение для замены текущего</value>
+  </data>
+	<data name="Content" xml:space="preserve">
+    <value>Текст *</value>
+  </data>
+	<data name="UpdateNews" xml:space="preserve">
+    <value>Обновить новость</value>
+  </data>
+	<data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+	<data name="EnterTitle" xml:space="preserve">
+  <value>Введите заголовок новости</value>
+</data>
+	<data name="EnterSubtitle" xml:space="preserve">
+  <value>Введите подзаголовок новости</value>
+</data>
+	<data name="WriteContent" xml:space="preserve">
+  <value>Напишите текст новости здесь...</value>
+</data>
+	<data name="ChooseFile" xml:space="preserve">
+  <value>Выберите файл</value>
+</data>
+	<data name="NoFileChosen" xml:space="preserve">
+  <value>Файл не выбран</value>
+</data>
+	<data name="SupportedFormats" xml:space="preserve">
+  <value>Поддерживаемые форматы: JPG, PNG, GIF. Макс. размер: 10MB</value>
+</data>
+
+</root>

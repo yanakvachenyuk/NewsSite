@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="AllNews" xml:space="preserve">
+    <value>Все новости</value>
+  </data>
+	<data name="StayInformed" xml:space="preserve">
+    <value>Будьте в курсе наших последних обновлений</value>
+  </data>
+	<data name="ReadMore" xml:space="preserve">
+    <value>Читать далее</value>
+  </data>
+	<data name="NoNewsAvailable" xml:space="preserve">
+    <value>Новостей нет</value>
+  </data>
+	
+</root> 

@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["AdminLogin"];
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/auth.css" />
+}
+
+<div class="login-container">
+    <div class="login-card">
+        <div class="login-header">
+            <h2>🔐 @Localizer["AdminPortal"]</h2>
+            <p>@Localizer["SignInToAccount"]</p>
+        </div>
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert">
+                @Localizer["InvalidCredentials"]
+            </div>
+        }
+
+        <form method="post">
+            <div class="form-group">
+                <label class="form-label">@Localizer["Email"]</label>
+                <input type="email" class="form-control" name="email" required value="admin@news.com">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">@Localizer["Password"]</label>
+                <input type="password" class="form-control" name="password" required value="admin123">
+            </div>
+
+            <button type="submit" class="btn-primary">@Localizer["SignIn"]</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - @Localizer["NewsSite"]</title>
+    <link rel="stylesheet" href="~/css/main.css" />
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="navbar-brand">📰 @Localizer["NewsSite"]</a>
+            <ul class="nav-links">
+                <li><a href="/" class="nav-link">🏠 @Localizer["Home"]</a></li>
+                <li><a href="/Home/AllNews" class="nav-link">📋 @Localizer["AllNews"]</a></li>
+                <li><a href="/Admin/Login" class="nav-link">🔐 @Localizer["Admin"]</a></li>
+     
+                <li>
+                    <form id="culture-form" asp-controller="Home" asp-action="SetLanguage" method="post">
+                        <select name="culture" id="culture-select"
+                                style="background: transparent; border: 1px solid #ddd; border-radius: 0.25rem; padding: 0.25rem; color: #4a5568;">
+                            <option value="en">EN</option>
+                            <option value="ru">RU</option>
+                        </select>
+                        <input type="hidden" name="returnUrl" value="@Context.Request.Path" />
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 @Localizer["NewsSite"]</p>
+        </div>
+    </footer>
+
+    <script>
+      
+        document.addEventListener('DOMContentLoaded', function() {
+            const cultureSelect = document.getElementById('culture-select');
+            const currentCulture = '@System.Globalization.CultureInfo.CurrentCulture.Name';
+
+            if (currentCulture) {
+                cultureSelect.value = currentCulture;
+            }
+
+            cultureSelect.addEventListener('change', function() {
+                document.getElementById('culture-form').submit();
+            });
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="NewsManagement" xml:space="preserve">
+    <value>News Management</value>
+  </data>
+	<data name="CreateNew" xml:space="preserve">
+    <value>Create New</value>
+  </data>
+	<data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+	<data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+	<data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+	<data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+	<data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+	<data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+	<data name="NoArticlesFound" xml:space="preserve">
+    <value>No news articles found</value>
+  </data>
+	<data name="StartCreating" xml:space="preserve">
+    <value>Start by creating your first news article.</value>
+  </data>
+	<data name="CreateFirstNews" xml:space="preserve">
+    <value>Create First News</value>
+  </data>
+</root>

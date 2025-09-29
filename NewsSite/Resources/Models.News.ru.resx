@@ -1,0 +1,23 @@
+<root>
+	<data name="Title">
+		<value>Заголовок</value>
+	</data>
+	<data name="Subtitle">
+		<value>Подзаголовок</value>
+	</data>
+	<data name="Content">
+		<value>Текст новости</value>
+	</data>
+	<data name="NewsImage">
+		<value>Изображение новости</value>
+	</data>
+	<data name="RequiredAttribute_ValidationError">
+		<value>Поле «{0}» обязательно для заполнения</value>
+	</data>
+	<data name="StringLengthAttribute_ValidationError">
+		<value>Длина поля «{0}» не должна превышать {1} символов</value>
+	</data>
+	<data name="MinLengthAttribute_ValidationError">
+		<value>Длина поля «{0}» должна быть не менее {1} символов</value>
+	</data>
+</root>

@@ -1,0 +1,155 @@
+﻿
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    padding: 2rem 3rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+    .admin-header h2 {
+        margin: 0;
+        color: #2d3748;
+        font-size: 2rem;
+    }
+
+.admin-actions {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+.news-table {
+    width: 100%;
+    max-width: 1400px; 
+    margin: 0 auto;
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+    .news-table table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed; 
+    }
+
+    .news-table th,
+    .news-table td {
+        padding: 1.5rem 2rem;
+        text-align: left;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .news-table th {
+        background: #f7fafc;
+        font-weight: 700;
+        color: #4a5568;
+        font-size: 1.1rem;
+    }
+
+    .news-table td {
+        color: #2d3748;
+        font-size: 1rem;
+    }
+
+    .news-table tr:hover {
+        background: #f0f4f8;
+    }
+
+.table-actions a,
+.table-actions button {
+    margin-right: 0.7rem;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    margin-left: 15px;
+    border: none;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #667eea;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background: #5a67d8;
+    }
+
+.btn-secondary {
+    background: #a0aec0;
+    color: white;
+}
+
+    .btn-secondary:hover {
+        background: #718096;
+    }
+
+.btn-success {
+    background: #48bb78;
+    color: white;
+}
+
+    .btn-success:hover {
+        background: #38a169;
+    }
+
+.btn-danger {
+    background: #f56565;
+    color: white;
+}
+
+    .btn-danger:hover {
+        background: #e53e3e;
+    }
+
+.btn-sm {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+}
+
+
+.alert {
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.alert-info {
+    background: #bee3f8;
+    color: #2c5aa0;
+    border-left: 5px solid #4299e1;
+}
+
+    .alert-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .alert-info p {
+        margin-bottom: 1rem;
+    }
+
+    .alert-info .btn {
+        margin-top: 0.5rem;
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+    }
+
+
+

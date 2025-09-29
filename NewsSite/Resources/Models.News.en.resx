@@ -1,0 +1,23 @@
+﻿<root>
+	<data name="Title">
+		<value>Title</value>
+	</data>
+	<data name="Subtitle">
+		<value>Subtitle</value>
+	</data>
+	<data name="Content">
+		<value>Content</value>
+	</data>
+	<data name="NewsImage">
+		<value>News Image</value>
+	</data>
+	<data name="RequiredAttribute_ValidationError">
+		<value>The {0} field is required.</value>
+	</data>
+	<data name="StringLengthAttribute_ValidationError">
+		<value>The length of {0} must not exceed {1} characters.</value>
+	</data>
+	<data name="MinLengthAttribute_ValidationError">
+		<value>The length of {0} must be at least {1} characters.</value>
+	</data>
+</root>

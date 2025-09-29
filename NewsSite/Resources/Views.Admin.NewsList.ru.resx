@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="NewsManagement" xml:space="preserve">
+    <value>Управление новостями</value>
+  </data>
+	<data name="CreateNew" xml:space="preserve">
+    <value>Создать новую</value>
+  </data>
+	<data name="Logout" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+	<data name="Title" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+	<data name="Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+	<data name="Actions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+	<data name="Edit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+	<data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+	<data name="NoArticlesFound" xml:space="preserve">
+    <value>Новостей не найдено</value>
+  </data>
+	<data name="StartCreating" xml:space="preserve">
+    <value>Начните с создания вашей первой новости.</value>
+  </data>
+	<data name="CreateFirstNews" xml:space="preserve">
+    <value>Создать первую новость</value>
+  </data>
+</root>

@@ -1,0 +1,145 @@
+﻿.admin-form {
+    max-width: 1250px;
+    margin: 0 auto 3rem auto;
+    background: white;
+    padding: 3.5rem 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    word-wrap: break-word;
+}
+
+    .admin-form h2 {
+        font-size: 2.4rem;
+        color: #2d3748;
+        margin-bottom: 1rem;
+    }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #4a5568;
+    font-size: 1.1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 0.6rem;
+    font-size: 1.1rem;
+    border: 2px solid #e2e8f0;
+    transition: border-color 0.3s;
+    resize: vertical;
+}
+
+    .form-control:focus {
+        outline: none;
+        border-color: #667eea;
+    }
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.file-input-label {
+    display: inline-block;
+    padding: 0.85rem 1.75rem;
+    background: #667eea;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+    .file-input-label:hover {
+        background: #5a67d8;
+    }
+
+.file-name {
+    margin-left: 1rem;
+    color: #718096;
+    font-size: 0.95rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 65%;
+}
+
+.form-actions {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #667eea;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background: #5a67d8;
+    }
+
+.btn-secondary {
+    background: #a0aec0;
+    color: white;
+}
+
+    .btn-secondary:hover {
+        background: #718096;
+    }
+
+span[asp-validation-for] {
+    color: #f56565;
+    font-size: 0.875rem;
+    margin-top: 0.2rem;
+    word-break: break-word;
+}
+
+.custom-file-input {
+    display: none;
+}
+
+.admin-form.edit-page {
+    max-width: 1250px;
+    padding: 3.5rem 5rem;
+    gap: 3rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+    .admin-form.edit-page h2 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .admin-form.edit-page .form-control {
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .admin-form.edit-page .file-name {
+        max-width: 65%;
+    }

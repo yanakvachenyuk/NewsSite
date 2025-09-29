@@ -1,0 +1,49 @@
+﻿@model List<NewsSite.Models.News>
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Home"];
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" />
+}
+
+
+@if (Model.Any())
+{
+    <div class="news-grid">
+        @foreach (var news in Model)
+        {
+            <div class="news-card">
+                @if (!string.IsNullOrEmpty(news.ImageFileName))
+                {
+                    <img src="/uploads/news/@news.ImageFileName" class="news-card-image" alt="@news.Title">
+                }
+                <div class="news-card-content">
+                    <h3 class="news-card-title">@news.Title</h3>
+                    <p class="news-card-subtitle">@news.Subtitle</p>
+                    <p class="news-card-text">
+                        @(news.Content.Length > 100 ? news.Content.Substring(0, 100) + "..." : news.Content)
+                    </p>
+                    <div class="news-card-footer">
+                        <span class="news-card-date">@news.CreatedDate.ToString("MMM dd, yyyy")</span>
+                        <a href="/Home/NewsDetails/@news.Id" class="btn">@Localizer["ReadMore"]</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="/Home/AllNews" class="btn btn-outline">@Localizer["ViewAllNews"]</a>
+    </div>
+}
+else
+{
+    <div class="empty-state">
+        <h3>@Localizer["NoNews"]</h3>
+        <p>@Localizer["CheckLater"]</p>
+    </div>
+}

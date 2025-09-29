@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="NewsSite" xml:space="preserve">
+    <value>Новостной Сайт</value>
+  </data>
+	<data name="Home" xml:space="preserve">
+    <value>Главная</value>
+  </data>
+	<data name="AllNews" xml:space="preserve">
+    <value>Все новости</value>
+  </data>
+	<data name="Admin" xml:space="preserve">
+    <value>Админка</value>
+  </data>
+	
+</root>

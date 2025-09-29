@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="ViewAllNews" xml:space="preserve">
+    <value>Все новости</value>
+  </data>
+	<data name="ReadMore" xml:space="preserve">
+    <value>Читать далее</value>
+  </data>
+	<data name="NoNews" xml:space="preserve">
+    <value>Новостей нет</value>
+  </data>
+	<data name="CheckLater" xml:space="preserve">
+    <value>Заходите позже за обновлениями!</value>
+  </data>
+</root> 

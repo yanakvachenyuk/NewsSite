@@ -1,0 +1,41 @@
+﻿@model NewsSite.Models.News
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/news.css" />
+}
+
+<div class="news-detail">
+    
+
+    <header class="news-header">
+        <h1 class="news-title">@Model.Title</h1>
+        @if (!string.IsNullOrEmpty(Model.Subtitle))
+        {
+            <h2 class="news-subtitle">@Model.Subtitle</h2>
+        }
+        <div class="news-meta">
+            @Localizer["PublishedOn"] @Model.CreatedDate.ToString(" dd MMMM, yyyy")
+        </div>
+    </header>
+
+    @if (!string.IsNullOrEmpty(Model.ImageFileName))
+    {
+        <img src="/uploads/news/@Model.ImageFileName" class="news-image" alt="@Model.Title">
+    }
+
+    <div class="news-content">
+        @Html.Raw(Model.Content.Replace("\n", "<br>"))
+    </div>
+
+    <div class="news-actions">
+        <a href="/Home/AllNews" class="btn btn-back" >← @Localizer["BackToAllNews"]</a>
+        <a href="/" class="btn btn-back" >← @Localizer["BackToHome"]</a>
+        
+    </div>
+</div>

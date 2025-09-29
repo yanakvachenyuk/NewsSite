@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="BackToAllNews" xml:space="preserve">
+    <value>Back to All News</value>
+  </data>
+	<data name="BackToHome" xml:space="preserve">
+    <value>Back to Home</value>
+  </data>
+	<data name="PublishedOn" xml:space="preserve">
+    <value>Published on</value>
+  </data>
+</root>

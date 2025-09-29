@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="NewsSite" xml:space="preserve">
+    <value>News Site</value>
+  </data>
+	<data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+	<data name="AllNews" xml:space="preserve">
+    <value>All News</value>
+  </data>
+	<data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+	
+</root>
